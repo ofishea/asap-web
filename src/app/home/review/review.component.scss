@@ -1,0 +1,167 @@
+/* Add this style to your existing CSS */
+.slide-indicators {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #bbb;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .indicator.active {
+    background-color: #FFAA02;
+  }
+  .testimonials >h1{
+    text-align: center;
+    font-size: 2.2rem;
+    color:#73AA1E; 
+    margin-bottom: 5px;
+  }
+  
+.mySlides1{
+    height: fit-content;
+    
+}
+  .testimonials{
+  padding: 10% 6% 10% 6%;
+  height: fit-content;
+  }
+  .review{
+    display: block;
+  }
+  .rev{
+    background-image: url('/assets/illustrations/Frame\ 6356141.png');
+    background-size: 150px 150px;
+    background-position: top left;
+    background-repeat: none;
+    background-repeat: no-repeat;
+    height: fit-content;
+  }
+
+  .revs{
+    background-image: url('/assets/illustrations/Frame\ 6356142.png');
+    background-size: 150px 150px;
+    background-position: bottom right;
+    background-repeat: none;
+    background-repeat: no-repeat;
+
+  }
+  .rev-cont{
+   
+    justify-content: center;
+    align-items: center;
+    background-image: url('/assets/illustrations/Frame\ 37.png');
+    background-size: 400px 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+  }
+  .com-1{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: right;
+    align-items: baseline;
+    left: -50px;
+    top: 0;
+  }
+  .com-2{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: -70px;
+    justify-content: left;
+    right: -70px;
+    
+  }
+  .com-txt{
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 7px;
+    box-shadow: 3px 3px 5px #b3b3b3;
+
+  }
+  .com-txt1{
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 7px;
+    box-shadow: 3px 3px 5px #b3b3b3;
+  }
+  .btn{
+    font-size: 17px;
+    font-weight: 500;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px #b3b3b3;
+  }
+  .hed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hdr{
+    margin: 0 10px 0 10px;
+    color: #75AB1F;
+    font-size: 1.2rem;
+  }
+  .man{
+    width: 80px;
+    height: 81px;
+    margin-bottom: -20px;
+  }
+  .man1{
+    width: 80px;
+    height: 81px;
+    margin-bottom: -3.5rem;
+  }
+  .tt{
+    text-align: left;
+    font-size: .7rem;
+    margin-top:-10px;
+  }
+  .tt2{
+    font-size: .8rem;
+    text-align: left;
+    margin-top:-10px;
+
+  }
+  .read{
+    text-align: right;
+    font-size: .7rem;
+    margin-top:-10px;
+
+  }
+  @media(max-width:601px){
+    .hdr{
+      margin: 0 5px 0 5px;
+      color: #75AB1F;
+      font-size: 1rem;
+    }
+    .rev,.revs{
+        background-size: 50px 50px;
+    }
+    .rev-cont{
+        background-size: 200px 200px;
+    }
+    .man,.man1{
+        width: 60px;
+        height: 61px;
+    }
+    .com-1{
+        left: 0;
+    }
+    .com-2{
+        right: 0;
+        bottom: -75px;
+    }
+    .com-txt,.com-txt1{
+        padding: 5px;
+    }
+  }

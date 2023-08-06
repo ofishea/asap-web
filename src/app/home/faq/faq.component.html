@@ -1,0 +1,33 @@
+<div
+  class="carousel"
+  (swipeleft)="nextSlide()"
+  (swiperight)="prevSlide()"
+  (mouseenter)="handleMouseEnter()"
+  (mouseleave)="handleMouseLeave()"
+  (touchstart)="handleTouchStart($event)"
+  (touchend)="handleTouchEnd($event)"
+>
+<div class="hed"><img src="/assets/illustrations/Frame 39.png"> <span class="hdr">What they ask</span> <img src="/assets/illustrations/Frame 38.png"></div>
+<h1 class="sup">FAQs</h1>
+  <div class="carousel-inner" [style.transform]="'translateX(' + offset + 'px)'">
+    <div
+      *ngFor="let slide of carouselData"
+      class="carousel-slide"
+      [style.flex]="'0 0 calc(100% / ' + cols + ' - 100%)'"
+    >
+      <div class="carousel-item">
+        <h4><b>{{ slide.title }}</b></h4>
+        <p>{{ slide.body }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="indicators">
+    <span class="prev-button" (click)="prevSlide()">&larr;</span> <span
+      *ngFor="let slide of carouselData; let i = index"
+      class="indicator"
+      [class.active]="i === activeIndex"
+      (click)="goToSlide(i)"
+    ></span><span class="next-button" (click)="nextSlide()">&rarr;</span>
+  </div>
+  
+</div>

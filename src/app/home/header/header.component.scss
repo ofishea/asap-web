@@ -1,0 +1,101 @@
+/* Small screen sizes */
+@media only screen and (max-width: 600px) {
+  .desktop-nav {
+    display: none; /* Hide desktop nav on mobile */
+  }
+  .mobile-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .mobile-menu ion-button {
+    margin: 0 10px; /* Add some space between menu items */
+   text-transform: lowercase;
+   border-bottom: 1px solid #2222;
+  }
+  ion-buttons.menu-icon {
+    display: block;
+  }
+
+  ion-buttons.logo-button,
+  ion-buttons.privacy-button {
+    display: flex;
+  }
+
+  ion-content {
+    overflow: hidden; /* Prevent scrolling when the menu is open */
+  }
+  .mob-logo{
+
+    width: 160px;
+  height: 48px;
+  }
+  .centered-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(240, 240, 240, 0.95); /* Adjust the background color and opacity as needed */
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: -100%; /* Initially off-screen to the right */
+    transition: right 0.3s; /* Transition for the slide-in and slide-out effect */
+  }
+
+  .centered-menu.active {
+    right: 0; /* Slide in the menu */
+  }
+
+  .centered-menu ion-button {
+    margin: 10px;
+  }
+}
+
+
+/* Larger screen sizes */
+@media only screen and (min-width: 601px) {
+  ion-buttons.menu-icon {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: block;
+  }
+
+  
+  ion-buttons.privacy-button {
+    display: flex;
+    margin-right: 50px;
+  }
+  ion-buttons.logo-button{
+    margin-left: 50px;
+    display: flex;
+
+  }
+  .desktop-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 15px;
+    width: 50%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+ .asap-logo{
+  width: 180px;
+  height: 54px;
+ }
+  .desktop-menu ion-button {
+    margin: 0 10px; /* Add some space between menu items */
+   text-transform: lowercase;
+  }
+  .mobile-nav{
+    display: none;
+  }
+}
