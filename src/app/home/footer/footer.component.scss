@@ -1,11 +1,14 @@
 .footer{
     background-color:  #222224;
-    padding: 5% 10% 10% 10%;
+    padding:5%;
+    padding-top: 1%;
+    padding-bottom: 0;
     color:#fff;
 }
 .footer-content{
     display: flex;
     flex-direction: row;
+   
 }
 .foot-2 > a {
     display: block;
@@ -15,7 +18,7 @@
     margin-bottom:5px;
 }
 .foot-2{
-    margin-left:20px;
+    margin-left:30px;
 }
 .socials{
     display: grid;
