@@ -17,6 +17,10 @@
 }
 .con-2{
     padding: 5%;
+    padding-right: 13%;
+}
+.con-1{
+    padding-left: 10%;
 }
 .con-2 > h1{
     font-size: 2rem;
@@ -34,6 +38,7 @@
     height: 10rem;
     margin-bottom: 10px;
     border: none;
+    padding: 15px;
 
 }
 
@@ -55,5 +60,8 @@
 @media(max-width:601px){
     .con{
         display: block;
+    }
+    .con-2{
+        padding: 5%;
     }
 }

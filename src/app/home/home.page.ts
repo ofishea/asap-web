@@ -27,5 +27,12 @@ export class HomePage {
       title: 'How to add to cart',
       body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati laudantium nihil rerum. Modi illo cum explicabo error dolorum. Nesciunt sapiente nemo quae aliquam nostrum corporis consectetur laboriosam perspiciatis unde error.',
     },
+    {
+      id: 5,
+      title: 'How to add to cart',
+      body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati laudantium nihil rerum. Modi illo cum explicabo error dolorum. Nesciunt sapiente nemo quae aliquam nostrum corporis consectetur laboriosam perspiciatis unde error.',
+    },
   ];
+
+  
 }

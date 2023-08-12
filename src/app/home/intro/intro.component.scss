@@ -21,6 +21,11 @@
 .sub-1 > p{
     word-spacing: 2px;
 }
+.header{
+    font-size: 3.5rem;
+    color: #FFAA02;
+    font-weight: 600;
+}
 .sub{
     background-color: #FFAA02;
     padding: 6% 10% -5% 10%;
@@ -58,6 +63,9 @@
     width: 362.06px;
     height: 165.32px;
 }
+.int-1{
+    padding-top: 5%;
+}
 @media(max-width:601px){
     .int{
         display: block;
@@ -79,5 +87,8 @@
     }
     .sub{
      height: 55rem;
+    }
+    .header{
+        font-size: 2.2rem;
     }
 }
