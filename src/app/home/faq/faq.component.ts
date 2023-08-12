@@ -1,8 +1,4 @@
-// Inside faq.component.ts
-
 import { Component, Input, OnInit } from '@angular/core';
-
-
 
 @Component({
   selector: 'app-faq',
@@ -12,14 +8,12 @@ import { Component, Input, OnInit } from '@angular/core';
 export class FaqComponent implements OnInit {
   constructor() { }
 
-  
   slideIndex = [1, 1];
   slideId = ["mySlides1", "mySlides2"];
- // slideInterval = 5000; 
-  timer: any;
 
   ngOnInit() {
-   // this.startSlideshow();
+    this.showSlides(1, 0);
+    this.showSlides(1, 1);
   }
 
   plusSlides(n: number, no: number) {
@@ -35,21 +29,8 @@ export class FaqComponent implements OnInit {
       this.slideIndex[no] = x.length;
     }
     for (let i = 0; i < x.length; i++) {
-      x[i].hidden = true;
+      x[i].style.display = "none"; // Hide all slides
     }
-    x[this.slideIndex[no] - 1].hidden = false;
+    x[this.slideIndex[no] - 1].style.display = "block"; // Display the current slide
   }
-
-  //startSlideshow() {
-    //this.timer = setInterval(() => {
-   //   this.plusSlides(1, 0); 
-   // }, this.slideInterval);
-  //}
-
-  stopSlideshow() {
-    clearInterval(this.timer);
-  }
-
-
 }
-

@@ -1,5 +1,7 @@
 /* Inside faq.component.scss */
-
+.testimonials{
+  padding:25% 0 10% 5%;
+}
 /* Set the height of the carousel to cover the entire screen */
 .carousel {
   width: 100%;
@@ -103,4 +105,9 @@
 }
 .hd{
   text-align: center;
+}
+@media(max-width:601px){
+  .carousel-inner{
+    display: block;
+  }
 }

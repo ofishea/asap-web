@@ -43,8 +43,11 @@
         padding: 5%;
     }
     .footer-content{
-        display: flex;
-        justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
     }
     .logo{
         width:120px;
@@ -53,5 +56,14 @@
     }
     .foot-2{
         margin-left: 0;
+    }
+    .foot-1{
+        display: block;
+    }
+    .foot-2 > a {
+        display: block;
+        text-align: center;
+        
+        
     }
 }
