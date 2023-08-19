@@ -1,31 +1,67 @@
 /* Inside faq.component.scss */
+.container {
+  background: linear-gradient(to bottom, #ffffff 40%, #FFAA02 60%);
+  margin-bottom: -30px;
+  padding-bottom: 40px;
+  height: fit-content;
+}
 .testimonials{
-  padding:25% 0 10% 5%;
+  top: -20px;
+  bottom: 0;
+  margin: 0 10%;
+  background-color: #ffe79e;
+  border-radius: 50px;
+  border: 4px solid #000000;
+  padding: 5% 0;
 }
 /* Set the height of the carousel to cover the entire screen */
 .carousel {
   width: 100%;
-  height: auto;
+  height: fit-content;
   overflow: hidden;
   position: relative;
-  padding: 5% 10% 10% 10%;
+  padding: 5% 2% 2% 2%;
 }
 
 /* For larger screens, show 2 rows and 2 columns */
 .carousel-inner {
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
-  transition: transform 0.3s ease;
-  height: 100%;
   align-items: center;
 }
 
 /* Individual box styles */
-.carousel-slide {
+.carousel-slide1 {
   display: block;
-  border: 1px solid #75AB1F;
+  overflow: scroll;
+  border: 1px solid #ffffff;
+  border-radius: 7px;
+  text-align: left;
+  box-sizing: border-box;
+  height: 400px;
+  min-height: 100%;
+  max-height: fit-content;
+  padding: 5%;
+  padding-top: 0;
+  margin: 3.5% 5% 3.5% 5%;
+  h3 {
+    font-size: 15px;
+    background-color: #75AB1F;
+    color: #000000;
+    border-radius: 10px;
+    padding: 5%;
+  }
+  .selected-question {
+    background-color: #000000;
+    color: #ffffff;
+  }
+}
+
+/* Individual box styles */
+.carousel-slide2 {
+  display: block;
+  border: 1px solid #ffffff;
   border-radius: 7px;
   text-align: left;
   box-sizing: border-box;
@@ -34,7 +70,10 @@
   max-height: fit-content;
   padding: 5%;
   padding-top: 0;
-  margin: 3.5% 10% 3.5% 5%;
+  margin: 3.5% 5% 3.5% 5%;
+  p {
+    font-size: 16px;
+  }
 }
 
 /* Indicators styles */
@@ -105,6 +144,7 @@
 }
 .hd{
   text-align: center;
+  margin-bottom: -5px;
 }
 @media(max-width:601px){
   .carousel-inner{

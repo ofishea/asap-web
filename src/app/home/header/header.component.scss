@@ -3,6 +3,9 @@
   .desktop-nav {
     display: none; /* Hide desktop nav on mobile */
   }
+  .mobile-nav {
+    background-color: #ffe79e;
+  }
   .mobile-menu{
     display: flex;
     flex-direction: column;
@@ -11,7 +14,7 @@
   }
   .mobile-menu ion-button {
     margin: 0 10px; /* Add some space between menu items */
-   text-transform: lowercase;
+   text-transform: uppercase;
    border-bottom: 1px solid #2222;
   }
   ion-buttons.menu-icon {

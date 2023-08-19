@@ -6,31 +6,45 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./faq.component.scss'],
 })
 export class FaqComponent implements OnInit {
+  questions = [
+    'How to Buy meal',
+    'How to Cook meal',
+    'How to Customize meal',
+    'How to Buy meal',
+    'How to Cook meal',
+    'How to Customize meal',
+    'How to Buy meal',
+    'How to Cook meal',
+    'How to Customize meal',
+    'How to Customize meal',
+  ];
+
+  answers = [
+    'Answer 1',
+    'Answer 2',
+    'Answer 3',
+    'Answer 1',
+    'Answer 2',
+    'Answer 3',
+    'Answer 1',
+    'Answer 2',
+    'Answer 1',
+    'Answer 2',
+    'Answer 3',
+  ];
   constructor() { }
 
-  slideIndex = [1, 1];
-  slideId = ["mySlides1", "mySlides2"];
-
   ngOnInit() {
-    this.showSlides(1, 0);
-    this.showSlides(1, 1);
+    // Initialize the selected question to the first question
+    this.selectQuestion(0);
   }
 
-  plusSlides(n: number, no: number) {
-    this.showSlides(this.slideIndex[no] += n, no);
+  selectedQuestionIndex: number = -1;
+  selectedAnswer: string = '';
+
+  selectQuestion(index: number) {
+    this.selectedQuestionIndex = index;
+    this.selectedAnswer = this.answers[index];
   }
 
-  showSlides(n: number, no: number) {
-    const x = document.getElementsByClassName(this.slideId[no]) as HTMLCollectionOf<HTMLElement>;
-    if (n > x.length) {
-      this.slideIndex[no] = 1;
-    }
-    if (n < 1) {
-      this.slideIndex[no] = x.length;
-    }
-    for (let i = 0; i < x.length; i++) {
-      x[i].style.display = "none"; // Hide all slides
-    }
-    x[this.slideIndex[no] - 1].style.display = "block"; // Display the current slide
-  }
 }

@@ -9,6 +9,7 @@ import { FaqComponent } from './faq/faq.component';
 import { ReviewComponent } from './review/review.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
+import { TheBestComponent } from './the-best/the-best.component';
 import { HomePageRoutingModule } from './home-routing.module';
 
 
@@ -19,6 +20,15 @@ import { HomePageRoutingModule } from './home-routing.module';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage,HeaderComponent,IntroComponent,FaqComponent,ReviewComponent,FooterComponent,ContactComponent]
+  declarations: [
+    HomePage,
+    HeaderComponent,
+    IntroComponent,
+    FaqComponent,
+    ReviewComponent,
+    FooterComponent,
+    ContactComponent,
+    TheBestComponent
+  ]
 })
 export class HomePageModule {}

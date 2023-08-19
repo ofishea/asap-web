@@ -1,106 +1,22 @@
 <div class="container">
   <div class="testimonials">
-    <div class="hed"><img src="/assets/illustrations/Frame 39.png"> <span class="hdr">What they say</span> <img src="/assets/illustrations/Frame 38.png"></div>
+    <div class="hed"><img src="/assets/illustrations/Frame 39.png"> <span class="hdr">FAQs</span> <img src="/assets/illustrations/Frame 38.png"></div>
 
-    <h1 class="hd"><b>FAQ</b></h1><br>
 
-    <div class="mySlides1 slide" [hidden]="slideIndex[0] !== 1">
-      <div class="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-slide">
-            <h3><b>How to Buy meal</b></h3>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi itaque ut reiciendis voluptatum aut vero debitis officia eaque laborum non dolorem quibusdam culpa magni, laudantium officiis totam voluptates iusto.</p>
-
-          </div>
-          <div class="carousel-slide">
-            <h3><b>How to Buy dinner</b></h3>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi itaque ut reiciendis voluptatum aut vero debitis officia eaque laborum non dolorem quibusdam culpa magni, laudantium officiis totam voluptates iusto.</p>
-
-          </div>
-          <div class="carousel-slide">
-            <h3><b>How to Buy Pay</b></h3>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi itaque ut reiciendis voluptatum aut vero debitis officia eaque laborum non dolorem quibusdam culpa magni, laudantium officiis totam voluptates iusto.</p>
-
-          </div>
-          <div class="carousel-slide">
-            <h3><b>How to Run</b></h3>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi itaque ut reiciendis voluptatum aut vero debitis officia eaque laborum non dolorem quibusdam culpa magni, laudantium officiis totam voluptates iusto.</p>
-
-          </div>
+    <div class="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-slide1">
+          <h1 class="hd"><b>Questions</b></h1><br />
+          <h3
+          *ngFor="let question of questions; let i = index"
+          [ngClass]="{ 'selected-question': selectedQuestionIndex === i }"
+          (click)="selectQuestion(i)"><b>{{ question }}</b></h3>
+        </div>
+        <div class="carousel-slide2">
+          <h1 class="hd"><b>Answer</b></h1><br />
+          <p>{{ selectedAnswer }}</p>
         </div>
       </div>
-    
     </div>
-    <div class="mySlides1 slide" [hidden]="slideIndex[0] !== 2">
-      <div class="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-slide">
-            <h3><b>How to Buy fish</b></h3>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi itaque ut reiciendis voluptatum aut vero debitis officia eaque laborum non dolorem quibusdam culpa magni, laudantium officiis totam voluptates iusto.</p>
-
-          </div>
-          <div class="carousel-slide">
-            <h3><b>How to Buy rice</b></h3>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi itaque ut reiciendis voluptatum aut vero debitis officia eaque laborum non dolorem quibusdam culpa magni, laudantium officiis totam voluptates iusto.</p>
-
-          </div>
-          <div class="carousel-slide">
-            <h3><b>How to Buy Pay</b></h3>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi itaque ut reiciendis voluptatum aut vero debitis officia eaque laborum non dolorem quibusdam culpa magni, laudantium officiis totam voluptates iusto.</p>
-
-          </div>
-          <div class="carousel-slide">
-            <h3><b>How to Run</b></h3>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi itaque ut reiciendis voluptatum aut vero debitis officia eaque laborum non dolorem quibusdam culpa magni, laudantium officiis totam voluptates iusto.</p>
-
-          </div>
-        </div>
-      </div>
-   
-        </div>
-    <div class="mySlides1 slide" [hidden]="slideIndex[0] !== 3">
-      <div class="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-slide">
-            <h3><b>How to Buy Potato</b></h3>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi itaque ut reiciendis voluptatum aut vero debitis officia eaque laborum non dolorem quibusdam culpa magni, laudantium officiis totam voluptates iusto.</p>
-
-          </div>
-          <div class="carousel-slide">
-            <h3><b>How to Buy Beans</b></h3>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi itaque ut reiciendis voluptatum aut vero debitis officia eaque laborum non dolorem quibusdam culpa magni, laudantium officiis totam voluptates iusto.</p>
-
-          </div>
-          <div class="carousel-slide">
-            <h3><b>How to Buy Pay</b></h3>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi itaque ut reiciendis voluptatum aut vero debitis officia eaque laborum non dolorem quibusdam culpa magni, laudantium officiis totam voluptates iusto.</p>
-
-          </div>
-          <div class="carousel-slide">
-            <h3><b>How to Run</b></h3>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi itaque ut reiciendis voluptatum aut vero debitis officia eaque laborum non dolorem quibusdam culpa magni, laudantium officiis totam voluptates iusto.</p>
-
-          </div>
-        </div>
-      </div>
-              
-               
-     </div>
-      
-    <!-- Slide Indicators -->
- 
-    <div class="slide-indicators">
-      <span class="btn" (click)="plusSlides(-1, 0)" class="btn">&larr;</span>
-      <span class="indicator" [class.active]="slideIndex[0] === 1"></span>
-      <span class="indicator" [class.active]="slideIndex[0] === 2"></span>
-      <span class="indicator" [class.active]="slideIndex[0] === 3"></span>
-      <span class="btn" (click)="plusSlides(1, 0)" class="btn">&rarr;</span>
-
-    </div>
-
-    <div class="test-control">
-    <!-- Use HTML directional codes for arrow buttons -->
-  </div>
 </div>
 </div>
-<br>

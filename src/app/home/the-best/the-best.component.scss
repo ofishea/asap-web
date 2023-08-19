@@ -1,0 +1,84 @@
+.container {
+    padding: 5% 10%;
+    background-color: #ffffff;
+
+    .heading {
+        align-items: center;
+        text-align: center;
+
+        h1 {
+            font-size: 3.5rem;
+            color: #FFAA02;
+            font-weight: 600;
+            font-family: "Futura", sans-serif;
+        }
+
+        h4 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #000000;
+        }
+    }
+
+    .ark-wrapper {
+        margin-top: 5%;
+        display: flex;
+        flex-direction: row;
+        overflow: scroll;
+        display: grid;
+        grid-template: 1fr/ 1fr 1fr 1fr;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        .ark {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: scroll;
+            margin: 20px 20px;
+            padding: 20px;
+            width: 400px;
+            height: 500px;
+            border: 4px solid #000000;
+            border-radius: 20px;
+            background-color: #ffffff;
+            ion-icon {
+                width: 150px;
+                height: 150px;
+                padding: 20px;
+                color: #FFAA02;
+            }
+            .body {
+                background-color: #ffffff;
+                border-radius: 20px;
+                padding-bottom: 10px;
+                .title {
+                    padding: 20px;
+                    font-size: 2.5rem;
+                    color: #FFAA02;
+                    font-weight: 400;
+                    font-family: "Futura", sans-serif;
+                }
+                .body-text {
+                    padding: 0 20px 10px 20px;
+                    font-size: 15px;
+                    color: #000000;
+                    font-family: "Futura", sans-serif;
+                }
+            }
+        }
+
+        .ark:nth-child(1) {
+          background: url('/assets/illustrations/ark1.png') 50% / cover no-repeat, #FFFFFF 50%; 
+        }
+        
+        .ark:nth-child(2) {
+          background: url('/assets/illustrations/ark2.png') 50% / cover no-repeat, #FFFFFF 50%;
+        }
+        
+        .ark:nth-child(3) {
+          background: url('/assets/illustrations/ark3.png') 50% / cover no-repeat, #FFFFFF 50%;
+        }
+        
+    }
+}
