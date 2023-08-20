@@ -1,0 +1,96 @@
+.download-button{
+    border: 1px solid black;
+    padding: 2px 8px 0px 8px;
+    width: 200px;
+    display: flex;
+    background-color: #000;
+    color: #fff;
+    height: fit-content;
+    margin-right: 5px;
+
+}
+.download-button-play{
+    border: 1px solid black;
+    background-color: #000;
+    color: #fff;
+    padding: 2px 8px 0px 8px;
+    width: 190px;
+    display: flex;
+    margin-left: 5px;
+    height: fit-content;
+}
+.apple-logo{
+    width: 30px;
+    height: 30px;
+    margin-top: 2px;
+}
+.text-cont{
+    margin-left: 5px;
+    margin-top: -12px;
+}
+.t-1{
+    font-size: .6rem;
+}
+.t-2{
+    font-size: .7rem;
+    font-weight: bold;
+    text-align: left;
+    margin-top: -8px;
+}
+
+.app-download{
+    display: flex;
+    flex-direction: row;
+    
+}
+.extras{
+    padding: 10% 15% 10% 15%;
+}
+.extra{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    background-color: #73aa1e;
+    border-radius: 30px;
+    padding: 0 5% 0% 5%;
+    padding-bottom: 0;
+    height: 40%;
+    width: fit-content;
+}
+.qr{
+    width: 30%;
+    margin-left: 5px;
+}
+.ex-1{
+    padding-top: 5%;
+}
+.ex-hd{
+    font-size:2rem;
+    font-weight: bold;
+}
+.ex-p{
+    font-size: 1rem;
+}
+.man{
+    width: 100%;
+    height: auto;
+    position: relative;
+   
+}
+
+@media(max-width:600px){
+    .extra{
+        display: block;
+    }
+    .extras{
+        padding: 10%;
+    }
+    .app-download{
+        flex-wrap: wrap;
+    }
+    .download-button, .download-button-play{
+        margin-right: 0;
+        margin-bottom: 5px;
+        margin-left: 0;
+        width: 150px;
+    }
+}

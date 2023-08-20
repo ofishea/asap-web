@@ -1,3 +1,35 @@
+.contact{
+    background-color: #FFAA02;
+    padding-top: 5%;
+}
+.tabs-controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #fff;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 15px;
+    padding: 2px;
+   
+    margin-left:40%;
+}
+#tab2{
+    display: none;
+}
+.tabs-controls button{
+    padding: 10px 20px 10px 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 10px;
+    transition: .7s ease-in-out;
+
+}
+.tabs-controls button.active {
+    background-color:  #FFAA02;
+    transition: .7s ease-in-out;
+  }
 .con{
     display: grid;
     grid-template: 1fr/1fr 1fr ;
@@ -66,5 +98,11 @@
     }
     .con-1{
         padding-left: 0;
+    }
+    .tabs-controls{
+        margin-left: 20%;
+    }
+    #tab2{
+        display: none;
     }
 }

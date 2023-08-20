@@ -10,6 +10,7 @@ import { ReviewComponent } from './review/review.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { TheBestComponent } from './the-best/the-best.component';
+import { AddonComponent } from './addon/addon.component';
 import { HomePageRoutingModule } from './home-routing.module';
 
 
@@ -28,7 +29,8 @@ import { HomePageRoutingModule } from './home-routing.module';
     ReviewComponent,
     FooterComponent,
     ContactComponent,
-    TheBestComponent
+    TheBestComponent,
+    AddonComponent
   ]
 })
 export class HomePageModule {}
