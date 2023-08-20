@@ -15,6 +15,9 @@ export class ContactComponent implements OnInit {
     const tab1Content = document.getElementById("tab1") as HTMLDivElement;
     const tab2Content = document.getElementById("tab2") as HTMLDivElement;
 
+    tab1Button.classList.add("active");
+
+
     // Show tab content as block on mobile and grid on desktop by default
     if (window.innerWidth <= 600) {
       tab1Content.style.display = "block";

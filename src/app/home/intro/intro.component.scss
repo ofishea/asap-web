@@ -91,7 +91,7 @@
 .download-button{
     border: 1px solid black;
     border-radius: 30px;
-    padding: 2px 9px 0px 9px;
+    padding: 4px 20px 2px 20px;
     width: fit-content;
     display: flex;
 }
@@ -99,7 +99,7 @@
     border: 1px solid black;
     border-radius: 30px;
     background-color: #fff;
-    padding: 2px 12px 0px 12px;
+    padding: 4px 20px 2px 20px;
     width: fit-content;
     display: flex;
     margin-left: 5px;
@@ -197,6 +197,22 @@
         width: 262.8px;
         height: 120px;
 
+    }
+    .download-button{
+        border: 1px solid black;
+        border-radius: 30px;
+        padding: 2px 9px 0px 9px;
+        width: fit-content;
+        display: flex;
+    }
+    .download-button-play{
+        border: 1px solid black;
+        border-radius: 30px;
+        background-color: #fff;
+        padding: 2px 12px 0px 12px;
+        width: fit-content;
+        display: flex;
+        margin-left: 5px;
     }
     .int{
         padding-top: 13%;
