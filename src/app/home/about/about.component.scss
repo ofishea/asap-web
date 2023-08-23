@@ -1,0 +1,257 @@
+.intro {
+    background-image: url('/assets/illustrations/hero-bg.png'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    background-color: #ffe79e;
+    height: 900px;
+}
+.int{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: grid;
+}
+.app{
+    width: 129px;
+    height: 39.93px;
+    margin-bottom: 5px;
+}
+.app1{
+    width: 129px;
+    height: 39.93px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+
+}
+.step{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    padding: 3%;
+    background-color: #73AA1E;
+    border-radius: 15px;
+    justify-content: space-between;
+    margin: 10px 0px 10px 0px ;
+}
+.steper{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    padding: 3%;
+    background-color: #fff;
+    border-radius: 15px;
+    justify-content: space-between;
+    margin: 10px 0px 10px 0px ;
+}
+
+.step-1{
+    display: flex;
+    flex-direction: row;
+}
+.bag{
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+}
+.step-text{
+    margin-left: 10px;
+}
+.step-hd{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.s-1{
+    font-size: 1rem;
+    margin-top: -7px;
+}
+.click{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+}
+.clicker{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+    background-color: #73aa1e;
+    padding: 5px;
+    border-radius: 50%;
+}
+.step-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 6%;
+}
+.download-button{
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 4px 20px 2px 20px;
+    width: fit-content;
+    display: flex;
+}
+.download-button-play{
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: #fff;
+    padding: 4px 20px 2px 20px;
+    width: fit-content;
+    display: flex;
+    margin-left: 5px;
+}
+.apple-logo{
+    width: 30px;
+    height: 30px;
+    margin-top: 2px;
+}
+.text-cont{
+    margin-left: 5px;
+    margin-top: -12px;
+}
+.t-1{
+    font-size: .6rem;
+}
+.t-2{
+    font-size: .7rem;
+    font-weight: bold;
+    text-align: left;
+    margin-top: -8px;
+}
+.sub-1 > h1{
+    color: #fff;
+}
+.app-download{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.sub-1 > p{
+    word-spacing: 2px;
+}
+.header{
+    font-size: 5.5rem;
+    color: #FFAA02;
+    font-weight: 700;
+    padding: 10px;
+    font-family: "Futura", sans-serif;
+}
+.sub{
+    background-color: #FFAA02;
+    padding: 6% 7%;
+    
+}
+.sub-1{
+    padding: 10% 0;
+    margin-right: 5%;
+}
+.subs{
+    display: grid;
+    background-color: #FFAA02;
+    grid-template: 1fr/ 1fr 1fr;
+    
+}
+.sub-2{
+    background-image: url('/assets/illustrations/Frame\ 5.png');
+    background-size: 600px 400px;
+    background-repeat: no-repeat;
+    background-position: right;
+
+}
+.gn{
+   color: #73AA1E;
+}
+.user{
+    width: 132px;
+    height: 30px;
+}
+.int-1 > p {
+    word-spacing: 2px;
+}
+.asap{
+    width: 362.06px;
+    height: 165.32px;
+}
+.int-1{
+    padding-top: 5%;
+}
+@media(max-width:601px){
+    .step-2{
+        margin-left: 2%;
+    }
+    .step-text{
+        margin-left: 6px;
+    }
+    .intro {
+        height: 520px;
+    }
+    .int{
+        display: block;
+    }
+    .asap{
+        width: 262.8px;
+        height: 120px;
+
+    }
+    .download-button{
+        border: 1px solid black;
+        border-radius: 30px;
+        padding: 2px 9px 0px 9px;
+        width: fit-content;
+        display: flex;
+    }
+    .download-button-play{
+        border: 1px solid black;
+        border-radius: 30px;
+        background-color: #fff;
+        padding: 2px 12px 0px 12px;
+        width: fit-content;
+        display: flex;
+        margin-left: 5px;
+    }
+    .int{
+        padding-top: 13%;
+    }
+    .subs{
+        display: block;
+    }
+    .sub-2{
+        background-size: contain;
+        margin-top:-10%;
+        padding-top: 0%;
+    }
+    .sub{
+     height: auto;
+    }
+    .header{
+        font-size: 2.2rem;
+    }
+    .img-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.changing-text {
+    display: inline-block;
+    overflow: hidden;
+    color: #73aa1e;
+    vertical-align: bottom;
+  }
+  
+  .typing {
+    animation: typingAnimation 2s steps(30, end);
+  }
+  
+  @keyframes typingAnimation {
+    from {
+      width: 0;
+    }
+  }
+  

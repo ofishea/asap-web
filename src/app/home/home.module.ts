@@ -12,6 +12,7 @@ import { ContactComponent } from './contact/contact.component';
 import { TheBestComponent } from './the-best/the-best.component';
 import { AddonComponent } from './addon/addon.component';
 import { HomePageRoutingModule } from './home-routing.module';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { HomePageRoutingModule } from './home-routing.module';
     HomePage,
     HeaderComponent,
     IntroComponent,
+    AboutComponent,
     FaqComponent,
     ReviewComponent,
     FooterComponent,
