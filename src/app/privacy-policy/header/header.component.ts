@@ -16,7 +16,7 @@ export class HeaderComponent {
         if (element) {
           element.scrollIntoView({ behavior: 'smooth' });
         }
-      }, 500); // Adjust the delay as needed
+      }, 50); // Adjust the delay as needed
     });
   }
   navigateToFaq() {
@@ -26,7 +26,7 @@ export class HeaderComponent {
         if (element) {
           element.scrollIntoView({ behavior: 'smooth' });
         }
-      }, 500); // Adjust the delay as needed
+      }, 50); // Adjust the delay as needed
     });
   }
 
@@ -37,7 +37,17 @@ export class HeaderComponent {
         if (element) {
           element.scrollIntoView({ behavior: 'smooth' });
         }
-      }, 500); // Adjust the delay as needed
+      }, 50); // Adjust the delay as needed
+    });
+  }
+  navigateToHd() {
+    this.router.navigate(['/home'], { fragment: 'hd' }).then(() => {
+      setTimeout(() => {
+        const element = document.getElementById('hd');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 50); // Adjust the delay as needed
     });
   }
 }

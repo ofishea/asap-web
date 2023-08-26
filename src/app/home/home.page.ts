@@ -37,6 +37,13 @@ export class HomePage {
         }
       }
     });
-
+    this.route.fragment.subscribe(fragment => {
+      if (fragment === 'hd') {
+        const element = document.getElementById('hd');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    });
   }
 }

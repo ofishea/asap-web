@@ -7,7 +7,7 @@
   </ion-header>
   <ion-content class="ion-padding">
     <ion-buttons class="mobile-menu">
-      <ion-button href="/home">Home</ion-button>
+      <ion-button (click)="navigateToHd()">Home</ion-button>
         <ion-button (click)="navigateToAbt()">About us</ion-button>
         <ion-button (click)="navigateToFaq()">Faqs</ion-button>
         <ion-button (click)="navigateToCnt()">Contact us</ion-button>
@@ -41,7 +41,7 @@
 
       <!-- Desktop menu items -->
       <ion-buttons class="desktop-menu">
-        <ion-button href="/home">Home</ion-button>
+        <ion-button (click)="navigateToHd()">Home</ion-button>
         <ion-button (click)="navigateToAbt()">About us</ion-button>
         <ion-button (click)="navigateToFaq()">Faqs</ion-button>
         <ion-button (click)="navigateToCnt()">Contact us</ion-button>
