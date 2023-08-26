@@ -7,10 +7,10 @@
   </ion-header>
   <ion-content class="ion-padding">
     <ion-buttons class="mobile-menu">
-      <ion-button>Home</ion-button>
-      <ion-button>About us</ion-button>
-      <ion-button>Faqs</ion-button>
-      <ion-button>Contact us</ion-button>
+      <ion-button href="/home">Home</ion-button>
+        <ion-button (click)="navigateToAbt()">About us</ion-button>
+        <ion-button (click)="navigateToFaq()">Faqs</ion-button>
+        <ion-button (click)="navigateToCnt()">Contact us</ion-button>
     <!--  <ion-button  color="success" routerLink="/privacy-policy">Privacy Policy</ion-button> -->
 
     </ion-buttons>
@@ -41,10 +41,10 @@
 
       <!-- Desktop menu items -->
       <ion-buttons class="desktop-menu">
-        <ion-button routerLink="/">Home</ion-button>
-        <ion-button>About us</ion-button>
-        <ion-button>Faqs</ion-button>
-        <ion-button>Contact us</ion-button>
+        <ion-button href="/home">Home</ion-button>
+        <ion-button (click)="navigateToAbt()">About us</ion-button>
+        <ion-button (click)="navigateToFaq()">Faqs</ion-button>
+        <ion-button (click)="navigateToCnt()">Contact us</ion-button>
 
       </ion-buttons>
 
